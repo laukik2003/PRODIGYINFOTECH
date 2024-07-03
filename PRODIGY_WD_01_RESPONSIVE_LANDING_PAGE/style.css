@@ -1,0 +1,732 @@
+/* ==================== GOOGLE FONT ========================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section_container{
+    max-width:  1200px; ;
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section_header{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "oswald",sans-serif;
+    color: #0a0a0a;
+    text-align: center;
+}
+
+.section_description{
+    color: #737373;
+}
+
+.btn{
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn_primary{
+    background-color: #dc030a;
+}
+
+.btn_primary:hover{
+    background-color: rgb(135, 6, 12);
+}
+
+
+.btn_secondary{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn_secondary:hover{
+    background-color: #dc030a;
+    border-color: #dc030a;
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    background-color: #0a0a0a;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav_bar{
+    width:100%;
+    max-width: 1200px;
+    margin-inline: auto;
+
+}
+
+.nav_header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a0a0a;
+}
+
+.nav_logo img{
+    max-width: 90px;
+    height: 60px;
+}
+
+.nav_menu_btn{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+.nav_links{
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #0a0a0a;
+    transition: .5s;
+    z-index: -1;
+    transform: translateY(-100%);
+}
+
+.nav_links.open{
+    transform: translateY(0);
+}
+
+.nav_links a{
+    font-size: 1.1rem;
+    font-family: "oswald", sans-serif;
+    white-space: nowrap;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav_links a:hover{
+    color: #dc030a;
+}
+
+/*================================== HEADER ==========================*/
+
+.header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0,0,0,.8)), url("main3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header_container{
+    padding-block: 10rem;
+    display: grid;
+}
+
+.header_container h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-family: "Oswald",sans-serif;
+    line-height: 5rem;
+    color: #dc030a;
+}
+
+.header_content h2{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family:"Oswald",sans-serif ;
+    line-height: 3rem;
+    color: white;
+}
+
+.header_content p{
+    margin-bottom: 2rem;
+    color: #e5e5e5;
+}
+
+
+/* ======================== ABOUT ============================*/
+
+.about_header{
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+.about_header .section_header{
+    font-size: 3rem;
+}
+
+.about_header .section_description{
+    max-width: 350px;
+    margin-inline: auto;
+}
+
+.about_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem;
+}
+
+.about_card h4{
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 1rem;
+    padding-top: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Oswald",sans-serif;
+    color: #0a0a0a;
+}
+
+.about_card h4::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: #0a0a0a;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.about_card:nth-child(1) h4::before{
+    content: "01";
+}
+
+.about_card:nth-child(2) h4::before{
+    content: "02";
+}
+
+.about_card:nth-child(3) h4::before{
+    content: "03";
+}
+
+.about_card p{
+    color: #737373;
+}
+
+/* ============================= SESSION ===============================*/
+
+.session{
+    display: grid;
+}
+
+.session_card{
+
+    padding: 5rem 2rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.session_card:nth-child(1){
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url("boudybuilding.jpg");
+}
+
+
+.session_card:nth-child(2){
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url(cardio.jpg);
+}
+
+
+.session_card:nth-child(3){
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url(img1.webp);
+}
+
+
+.session_card:nth-child(4){
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url(cross-fit.jpg);
+}
+
+
+.session_card h4{
+    position: relative;
+    isolation: isolate;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "oswald", sans-serif;
+    color: white;
+}
+
+.session_card h4::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -5px;
+    height: 25px;
+    aspect-ratio: 1;
+    background-color:#dc030a;
+    z-index: -1;
+}
+
+.session_card{
+    max-width: 350px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+
+/* ========================== TRAINER =======================*/
+
+.trainer_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.trainer_card img{
+    margin-bottom: 1rem;
+}
+
+.trainer_card h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "oswald", sans-serif;
+    color: #0a0a0a;
+    text-align: center;
+}
+
+.trainer_card p{
+    margin-bottom: 1rem;
+    color: #737373;
+    text-align: center;
+}
+
+
+.trainer_socials{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.trainer_socials a{
+    font-size: 1.25rem;
+    color: #737373;
+}
+
+.trainer_socials a:hover{
+    color: #dc030a;
+}
+
+/* ======================================== MEMBERSHIP ======================================*/
+
+
+.membership{
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url("bakground.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.membership_container .section_header{
+    color: white;
+}
+
+.membership_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.membership_card{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .6);
+    transition: 0.3s;
+}
+
+.membership_card:hover{
+    background-color: #dc030a;
+}
+
+.membership_card h4{
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: "oswald",sans-serif;
+    color: white;
+}
+
+.membership_card ul{
+    margin-bottom: 1rem;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.membership_card li{
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+.membership_card li span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #dc030a;
+    transition: .3s;
+}
+
+.membership_card :hover li span{
+    color: white;
+}
+
+.membership_card h3{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "oswald",sans-serif;
+    color: white;
+}
+
+.membership_card h3:is(sup, span){
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.membership_card:hover .btn{
+    background-color: #0a0a0a;
+}
+
+
+/* ============================== BLOGS ===========================================*/
+
+.blog{
+    background-color: #0a0a0a;
+}
+
+.blog_container .section_header{
+    color: white;
+}
+
+.blog_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.blog_card img{
+    width: 17rem;
+    height: 15rem;
+    margin-bottom: 10px;
+}
+
+.blog_card h4{
+    max-width: calc(100% - 1rem);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Oswald",sans-serif;
+    color: white;
+    transition: .3s;
+}
+
+
+.blog_card:hover h4{
+    color: #dc030a;
+}
+
+.blog_btn{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+/* ======================= LOGO_BANNER =================================*/
+
+.logo_banner{
+    padding-block: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,fr);
+    gap: 2rem;
+}
+
+.logo_banner img{
+    width: 150px;
+    height: 150px;
+    margin-inline: auto;
+}
+
+
+/* ================================ FOOTER SECTION =============================*/
+
+.footer{
+    background-color: #0a0a0a;
+}
+
+.footer_container{
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.footer_logo img{
+    margin-bottom: 1rem;
+    max-width: 120px;
+}
+
+.footer_col p{
+    margin-bottom: 2rem;
+    color: #737373;
+}
+
+.footer_links{
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer_links a{
+    color: #737373;
+}
+
+.footer_links a:hover{
+    color: white;
+}
+
+.footer_links a span{
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #dc030a;
+}
+
+.footer_col h4{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.gallery_grid{
+    max-width: 275px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery_grid img{
+    width: 120px;
+    height: 80px;
+}
+
+.footer_col form{
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.footer_col input{
+    width: 100%;
+    padding-inline: 1rem;
+    outline: none;
+    border: none;
+    color: #0a0a0a;
+}
+
+
+.footer_socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_socials a{
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: #dc030a;
+    background-color: white;
+    border-radius: 100%;
+}
+
+
+.footer_socials a:hover{
+    color: white;
+    background-color: #dc030a;
+}
+
+.footer_bar{
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #737373;
+    text-align: center;
+}
+/* ============================================================================== */
+
+@media(width >540px){
+    .about_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .session_card{
+        padding: 7rem 2rem;
+    }
+
+    .trainer_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membership_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .blog_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (width >768px){
+    nav{
+        position: static;
+        padding: 1.5rem 1rem;
+    }
+
+    .nav_bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav_header{
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav_logo img{
+        max-width: 120px;
+    }
+
+    .nav_menu_btn{
+        display: none;
+    }
+
+    .nav_links{
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+        transform: none;
+        z-index: 1;
+    }
+
+    .header_container{
+        padding-block: 12rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header_content{
+        grid-column: 2/3;
+    }
+
+    .about_header{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .about_header .section_description{
+        text-align: left;
+        margin-inline-start: unset;
+    }
+
+    .about_grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .session{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .session_card{
+        padding: 10rem 2rem;
+    }
+
+    .trainer_grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .membership_grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .blog_grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+
+    .logo_banner {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .footer_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (width>1024px){
+    .trainer_grid{
+        gap: 2rem;
+    }
+
+    .membership_grid{
+        gap: 2rem;
+    }
+
+    .membership_card{
+        padding: 2rem;
+    }
+}

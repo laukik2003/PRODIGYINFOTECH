@@ -1,0 +1,115 @@
+body {
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-color: #080808;
+    color: blueviolet;
+    box-shadow: #e6f105;
+}
+
+#mainMenu {
+    font-size: 35px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    display: inline-block;
+    animation: move 3s infinite;
+    color: rgb(148, 34, 186);
+    justify-content: center;
+    text-shadow:0 0 2px rgb(3, 237, 241);
+    
+}
+input[type="text"],
+input[type="text"]:focus
+
+textarea{
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fefdfe;
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color:darkturquoise;
+    
+    
+
+}
+
+
+#registration{
+    margin-top: 175px;
+    margin-bottom: 250px;
+    color: cyan;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    
+    
+    
+
+}
+label{
+    color: deepskyblue;
+}
+
+#game{
+    margin-top: 60px;
+    color: #06e8e8;
+
+}
+
+#board {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 60px auto;
+    justify-content: center;
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    box-shadow: rgb(4, 0, 255);
+    border-color: rgb(253, 253, 253);
+    text-overflow: 12px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #0d0e0f;
+    border: 2px solid #c2c4d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    box-shadow:0 0 18px rgb(4, 0, 255);
+    
+}
+
+.cell:hover {
+    background-color: #09609e;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    background-color: #242427;
+    color: rgb(253, 254, 254);
+    border-radius: 10px;
+    box-shadow:0 0 12px #06e8e8;
+}
+
+button:hover {
+    background-color: rgb(62, 63, 64);
+}
